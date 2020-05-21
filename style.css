@@ -1,8 +1,17 @@
 body, html {
-    background-color: #333;
 	margin: 0;
     font-family: Roboto, Arial, helvetica, sans-serif;
-    overflow-x:auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.body {
+    background-color: #202020;
+	margin: 0;
+    font-family: Roboto, Arial, helvetica, sans-serif;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
 }
 
 a {
@@ -283,8 +292,53 @@ h1 {
 }
 .adctive h6 {
     font: Helvetica;
-    color: #4f4f4f;
+    color: #9c9898;
     margin-left: 80px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+.terms {
+    text-align: left;
+}
+
+.terms h1 {
+    font: Helvetica;
+    color: #ccb7a9;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-top: 175px;
+}
+.terms h2 {
+    font: Empires;
+    color: #ffaa80;
+    margin-left: 10px;
+    font-size: 100px;
+}
+.terms h3 {
+    font: Arial;
+    color: #ffaa80;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.terms h6 {
+    font: Helvetica;
+    color: #4f4f4f;
+    margin-left: 10px;
     font-size: 10px;
     font-style: italic;
 }
+.terms p, li {
+    font: Helvetica;
+    color: white;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
