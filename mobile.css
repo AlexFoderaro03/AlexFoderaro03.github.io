@@ -21,13 +21,13 @@ a {
 .navbar-container {
 	text-align: center;
 	background-color: #ffaa80;
-	box-shadow: 0px -20px 5px 20px #333333;
-	padding: 15px;
+	box-shadow: -10px -50px 5px 20px #333333;
+	padding: -10px;
 	font-size: 0;
 }
 
-.navbar-container ul {
-	margin: 15px;
+.navbar-container ul img {
+	margin: 5px;
 	padding: 0;
 	text-align: right;
 	display: inline-block;
@@ -36,14 +36,14 @@ a {
 
 .navbar-container ul li {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 13px;
 }
 
 .navbar-container ul li a {
 	color: #ffffff;
 	text-decoration: none;
 	display: inline-block;	
-	padding: 10px;
+	padding: 5px;
 	transition: color 0.5s;
 }
 
@@ -56,13 +56,13 @@ a {
 }
 
 .navbar-container ul li.active-link .underline {
-	width: 100%;
+	width: 50%;
 	background-color: white;
 }
 
 .navbar-container ul li:hover .underline {
 	background-color: white;
-	width: 100%;
+	width: 50%;
 }
 
 .navbar-container ul li:hover a {
@@ -199,6 +199,9 @@ body { overflow: hidden; }
 .rotate {
     -ms-transform: rotate(10deg); /* IE 9 */
     transform: rotate(10deg);
+    width: 30%;
+    height:30%;
+    display: inline-block;
 }
 .hover-item {
     transition: 0.3s;
@@ -225,7 +228,7 @@ body { overflow: hidden; }
 	text-decoration:none;
     text-shadow:0px 1px 0px #ffaa80;
     transition: 0.5s;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 .myButton:hover {
     background-color:#ffaa80;
@@ -341,5 +344,17 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 50%;
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+    display: block;
+}
+.btn {
+    font-size: 10px;
+    padding: 5px 12px;
+    border-radius: 5px;
+
 }
