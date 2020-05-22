@@ -56,13 +56,13 @@ a {
 }
 
 .navbar-container ul li.active-link .underline {
-	width: 70%;
+	width: 85%;
 	background-color: white;
 }
 
 .navbar-container ul li:hover .underline {
 	background-color: white;
-	width: 70%;
+	width: 85%;
 }
 
 .navbar-container ul li:hover a {
