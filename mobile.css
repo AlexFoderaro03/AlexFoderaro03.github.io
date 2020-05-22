@@ -22,7 +22,7 @@ a {
 	text-align: center;
 	background-color: #ffaa80;
 	box-shadow: 0px -20px 5px 20px #333333;
-	padding: 5px;
+	padding: 15px;
 	font-size: 0;
 }
 
@@ -36,7 +36,7 @@ a {
 
 .navbar-container ul li {
 	display: inline-block;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .navbar-container ul li a {
@@ -276,13 +276,13 @@ h1 {
     color: #ccb7a9;
     font-size: x-large;
     margin-left: 80px;
-    margin-top: 75px;
+    margin-top: 175px;
 }
 .adctive h2 {
     font: Empires;
     color: #ffaa80;
     margin-left: 80px;
-    font-size: 70px;
+    font-size: 100px;
 }
 .adctive h3 {
     font: Helvetica;
