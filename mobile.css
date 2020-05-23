@@ -228,7 +228,7 @@ body { overflow: hidden; }
 	text-decoration:none;
     text-shadow:0px 1px 0px #ffaa80;
     transition: 0.5s;
-    margin-left: 80px;
+    margin-left: 100px;
 }
 .myButton:hover {
     background-color:#ffaa80;
@@ -357,4 +357,41 @@ h1 {
     padding: 5px 12px;
     border-radius: 5px;
 
+}
+
+#slider {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
 }
