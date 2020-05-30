@@ -60,7 +60,35 @@
         <a href="#" class="myButton" style="text-decoration: none; transform: translate(-325px,350px);">Buy membership</a>    <div id="bubbles">
     <h1>About <span class="badge badge-secondary">BADGE A CAsOO!!3</h1><br>
     <button type="button" class="btn btn-danger" onclick="alert('SEI ESPLOSO AGAGAG')">Danger</button>
-</div>
+    <form>
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" class="form-control" id="nome" placeholder="Mario Pagliaccio 🤡" name="nome">
+        </div>
+        <div class="form-group">
+          <label for="età">Età:</label>
+          <input type="text" class="form-control" id="età" placeholder="99" name="età">
+        </div>
+        <div class="form-group">
+            <label for="città">Città:</label>
+            <input type="text" class="form-control" id="città" name="città" placeholder="Roma">
+        </div>
+        <button class="btn btn-primary" type="button" id="button">Cliccaaa!</button>
+      </form>
+<br>
+      <p style="color: white;" id="print"></p></div>
+      <script>
+        const bottone=document.getElementById("button");
+        const print=document.getElementById("print");
+        function prova() {
+            var nome = document.getElementById("nome").value;
+            var età = document.getElementById("età").value;
+            var città = document.getElementById("città").value;
+            print.innerHTML=`Ciao  ${nome} hai ${età} anni e abiti a ${città}!`;
+        }
+    
+        bottone.addEventListener("click",()=>prova());
+    </script>
 <br>
 </div>
 </html>
