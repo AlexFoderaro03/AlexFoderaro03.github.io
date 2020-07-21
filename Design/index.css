@@ -1,0 +1,120 @@
+body {
+    background-image: url('../Media/img/backwaves.png');
+    background-size: auto;
+}
+
+.toplogo {
+    height: 8%;
+    width: 8%;
+    display: inline;
+}
+
+.header1 {
+    font-family: 'Roboto', 'Roboto Medium', 'Roboto';
+    margin-top: 120px;
+    margin-left: 200px;
+    font-size: 60px;
+}
+
+.header2 {
+    font-family: 'Roboto Light', 'Roboto Medium', 'Roboto';
+    margin-top: 50px;
+    margin-left: 200px;
+    font-size: 28px;
+    font-style: normal;
+    width: 350px;
+    letter-spacing: 0.1px;
+    word-spacing: 2px;
+}
+
+h2::before {
+    content:'\a0\a0\a0\a0\a0\a0\a0\a0';
+    display:block;
+    color: rgb(159, 212, 181);
+    position:absolute;
+    text-decoration:underline;
+    width:450px;
+}
+
+.imgi {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-left: 850px;
+    display: inline-block;
+}
+body, html {
+	margin: 0;
+	font-family: Roboto, Arial, helvetica, sans-serif;
+}
+
+a {
+	outline: none;
+}
+
+.navbar-container {
+	text-align: center;
+	padding: 10px;
+    font-size: 0;
+    margin-top: 20px;
+}
+
+.navbar-container ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar-container ul li {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.navbar-container ul li a {
+	color:rgb(41, 41, 41);
+	text-decoration: none;
+	display: inline-block;	
+	padding: 10px;
+	transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+	height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+}
+
+.navbar-container ul li.active-link .underline {
+	width: 100%;
+	background-color: rgb(41, 41, 41);
+}
+
+.navbar-container ul li:hover .underline {
+	background-color: rgb(41, 41, 41);
+	width: 100%;
+}
+
+.navbar-container ul li:hover a {
+}
+
+.navbar-container ul li:active a {
+	transition: none;
+	color: rgba(255,255,255,0.76);
+}
+
+.navbar-container ul li:active .underline {
+	transition: none;
+	background-color: rgba(255,255,255,0.76);
+}
+
+.forinfos {
+    margin-top: 65px;
+    display: block;
+    margin-left: 200px;
+    width: 220px;
+    height: 50px;
+}
