@@ -33,6 +33,19 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+.lnk {
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+  font-weight: 50;
+  font-size: small;
+
+}
+
+.lnk:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .btn:hover {
   color: #000;
   background: #fff;
@@ -60,46 +73,11 @@ a {
   bottom: 0;
 }
 
-.sky {
-  background: url('../img/sky.png') no-repeat center;
+.times {
+  background: url('../img/times.jpg') no-repeat center;
   background-size: cover;
   transform: translateZ(-600px) scale(3);
   z-index: 1;
-}
-
-.bushes {
-  background: url('../img/bushes.png') no-repeat center;
-  background-size: cover;
-  transform: translateZ(-525px) scale(2.75);
-  z-index: 2;
-}
-
-.water {
-  background: url('../img/water.png') no-repeat center;
-  background-size: cover;
-  transform: translateZ(-400px) scale(2.33333333);
-  z-index: 3;
-}
-
-.people1 {
-  background: url('../img/people1.png') no-repeat center;
-  background-size: cover;
-  transform: translateZ(-250px) scale(1.833333333);
-  z-index: 4;
-}
-
-.people2 {
-  background: url('../img/people2.png') no-repeat center;
-  background-size: cover;
-  transform: translateZ(-125px) scale(1.4167);
-  z-index: 5;
-}
-
-.people3 {
-  background: url('../img/people3.png') no-repeat center;
-  background-size: cover;
-  transform: translateZ(0) scale(1);
-  z-index: 6;
 }
 
 .hero-text {
@@ -159,8 +137,8 @@ a {
 }
 
 .year-container h1:nth-of-type(2) {
-  left: 30%;
-  bottom: 0;
+  left: 50%;
+  bottom: 20px;
 }
 
 .year-container h1:nth-of-type(3) {
@@ -171,6 +149,11 @@ a {
 .year-container h1:nth-of-type(4) {
   right: 0;
   bottom: 20%;
+}
+
+.year-container h1:nth-of-type(4) {
+  right: 0;
+  bottom: 10%;
 }
 
 .social-container {
@@ -247,12 +230,7 @@ a {
 }
 
 @media (min-width: 1126px) {
-  .sky,
-  .bushes,
-  .water,
-  .people1,
-  .people2,
-  .people3,
+  .times,
   .hero-text {
     background-size: contain;
   }
