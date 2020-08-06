@@ -121,6 +121,7 @@ a {
 
 .hero-text ul li:nth-of-type(3) {
   visibility: visible;
+  padding-right: 0px;
 }
 
 .year-container {
