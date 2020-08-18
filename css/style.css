@@ -161,12 +161,10 @@ header ul.menu-right li.menu-cta a{
 }
 #about .about-left {
     display: inline-block;
+    width: 100%;
+    max-width: 400px;
 }
-#about .about-left img{
-    margin-top: 750px;
-    padding-bottom: 0.5em;
-    max-width: 450px;
-}
+
 #about .about-right {
     display: inline-block;
     width: 100%;
@@ -174,22 +172,27 @@ header ul.menu-right li.menu-cta a{
     margin-left: 10em;
 }
 #about .about-right h1{
-    font-size: 2.5em;
+    font-size: 2em;
+    color:  rgb(255, 138, 4);
     line-height: 1.5em;
     position: relative;
-    margin-bottom: 1em;
-    color:  rgb(255, 138, 4);
+    margin-bottom: 1em; 
 }
 #about .about-right h1::after{
     position: absolute;
     bottom: -24px;
     left: 0;
-    width: 40px;
-    height: 5px;
+    width: 70px;
+    height: 6px;
     content: '';
     border-radius: 5px;
     background:#8069FF;
     opacity: 1;
+}
+#about .about-left img{
+    margin-top: 750px;
+    padding-bottom: 0.5em;
+    max-width: 450px;
 }
 #about .about-right p{
     font-size: 1.125em;
@@ -281,6 +284,7 @@ footer .footer-links a{
     color: inherit;
     padding-right: 2em;
 }
+
 footer .company-name {
     color: #8069FF;
     font-size: 14px;
@@ -292,7 +296,7 @@ footer .footerr-center{
 }
 footer .footer-center i{
     background-color: white;
-    color:#8069FF;
+    color:rgb(255, 138, 4);;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -301,7 +305,7 @@ footer .footer-center i{
 }
 footer .footer-center p{
     display: inline-block;
-    color: rgb(255, 138, 4);
+    
     vertical-align: middle;
     margin: 0;
     font-size: 14px;
@@ -327,6 +331,8 @@ footer .footer-connect{
 }
 footer .footer-connect span{
     display: block;
+    padding-top: 1em;
+    padding-left: 3em;
     color: rgb(255, 138, 4);
     font-size: 16px;
     font-weight: bold;
@@ -337,8 +343,9 @@ footer .footer-icons {
     margin-top: 25px;
 }
 footer .footer-icons a{
+    padding-left: 2em;
     display: inline-block;
-    width: 35px;
+    width: 25px;
     height: 35px;
     cursor: pointer;
     background-color: white;
