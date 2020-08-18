@@ -357,6 +357,9 @@ footer .footer-icons a{
     margin-left: 5px;
 
 }
+footer .footer-icons a:hover{
+    color:  rgb(253, 166, 66);
+}
 
 /*Responsive*/
 
