@@ -100,7 +100,7 @@ header ul.menu-right li.menu-cta a{
     height: 6px;
     content: '';
     border-radius: 5px;
-    background:#8069FF;
+    background:#0AFC79;
     opacity: 1;
     position: absolute;     
 }
@@ -137,7 +137,7 @@ header ul.menu-right li.menu-cta a{
     width: 800px;
     height: 800px;
     border-radius: 50%;
-    background:#8069FF;
+    background: linear-gradient(#f7a03d, #ffc583, #0AFC79);;
     opacity: 1;
     
 }
@@ -149,7 +149,7 @@ header ul.menu-right li.menu-cta a{
     width: 200px;
     width: 200px;
     border-radius: 50%;
-    background:#8069FF;
+    background:#0AFC79;
     opacity: 0.4;
 
 }
@@ -186,7 +186,7 @@ header ul.menu-right li.menu-cta a{
     height: 6px;
     content: '';
     border-radius: 5px;
-    background:#8069FF;
+    background:#0AFC79;
     opacity: 1;
 }
 #about .about-left img{
@@ -211,7 +211,7 @@ header ul.menu-right li.menu-cta a{
     text-align: center;
     color: #ffff;
     border-radius: 3px;
-    background:#8069FF;
+    background: rgb(255, 138, 4);;
 }
 
 #about .top-right-gradient{
@@ -222,7 +222,7 @@ header ul.menu-right li.menu-cta a{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: linear-gradient(#ee9ca7, #ec4357);
+    background: linear-gradient(#0AFC79, #f7a03d);
 }
 
 .page-banner {
@@ -286,7 +286,7 @@ footer .footer-links a{
 }
 
 footer .company-name {
-    color: #8069FF;
+    color: #0AFC79;
     font-size: 14px;
     font-weight: normal;
     margin-top: 30px;
@@ -324,7 +324,7 @@ footer .footer-right{
 }
 footer .footer-connect{
     line-height: 20px;
-    color: #8069FF;
+    color: #0AFC79;
     font-size: 12px;
     font-weight: normal;
     margin: 0;
@@ -351,7 +351,7 @@ footer .footer-icons a{
     background-color: white;
     border-radius: 2px;
     font-size: 20px;
-    color: #8069FF;
+    color: #0AFC79;
     text-align: center;
     line-height: 35px;
     margin-left: 5px;
@@ -444,6 +444,10 @@ footer .footer-icons a:hover{
         display: none;
     }
 
+    header ul.menu-right li.menu-cta{
+        display: none;
+    }
+    
     #intro{
         max-height: 300px !important;
         text-align: center;
@@ -461,7 +465,7 @@ footer .footer-icons a:hover{
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background:  #8069FF;
+        background:  #0AFC79;
     }
     #intro .top-right-gradient{
         position: absolute;
@@ -479,10 +483,15 @@ footer .footer-icons a:hover{
     
     #intro h1{
         font-size: 24px !important;
+        padding-right: 50%;
     }
     #intro h1::after{
-       margin-left: 180px;
+       padding-right: 50%;
        margin-bottom: 10px;
+    }
+    #intro p{
+        font-size: 10px;
+        padding-right: 50%;
     }
     #intro .intro-left .intro-cta {
         display: inline-block !important;
