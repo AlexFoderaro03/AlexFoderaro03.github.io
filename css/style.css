@@ -478,25 +478,99 @@ footer .footer-icons a:hover{
     }
 
     #intro .intro-right img{
-        width: 380px;
+        width: 500px;
+        display: none;
     }
     
     #intro h1{
-        font-size: 24px !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 30px !important;
+        min-width: 290px;
         padding-right: 50%;
     }
     #intro h1::after{
-       padding-right: 50%;
+       margin-left: 20%;
        margin-bottom: 10px;
+       
     }
     #intro p{
-        font-size: 10px;
+        margin-left: 8%;
+        padding-top: 10px;
+        min-width: 240px;
+        font-size: 14px !important;
         padding-right: 50%;
+        text-align: center;
     }
     #intro .intro-left .intro-cta {
-        display: inline-block !important;
+        display: inline-block;
+        max-width: 300px;
+        margin-left: 8%;
     }
     
+    #about {
+        text-align: center !important;
+        padding: 0 0.5em;
+        margin-left: -160px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
+    #about .about-left img{
+        min-width: 400px;
+    }
 
+    #about .about-right h1{
+        padding-top: 25px;
+        font-size: 30px !important;
+    }
+    #about .about-right h1::after{
+        margin-left: 40%;
+        margin-bottom: 10px;
+    }
+    #about .about-right p{
+        margin-left: 15%;
+        padding-top: 10px;
+        min-width: 300px;
+        font-size: 16px !important;
+        padding-right: 50%;
+        text-align: center;
+    }
+    #about .about-right a{
+        display: inline-block !important;
+    }
+
+    .page-banner {
+        padding: 100px 0;
+        text-align: center;
+    }
+    .page-banner h1{
+        font-size: 30px !important;
+        font-weight: 700;
+    }
+    .page-banner h3{
+        margin-top: 10px;
+    }
+
+    /*footer*/
+    footer {
+        font: bold 14px;
+        padding: 24px 0 !important;
+    }
+    footer .footer-left,
+    footer .footer-center,
+    footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    footer .footer-links a{
+        padding-right: 10px;
+    }
+    footer .footer-center i{
+        display: inline;
+    }
 }
