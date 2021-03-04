@@ -1,143 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopfunder | Home</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-</head>
-<body>
-    <header id="header">
-        <div class="wrapper">
-            <a href="/">
-                <img src="./src/logo.png" draggable="false" style="-moz-user-select: none;" alt="logo">
-            </a>
-            
-            <button id="submenu">
-                <span></span>
-                <span></span>
-                <span></span>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Landing Page Design | Codegrid</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://unpkg.co/gsap/dist/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="site-logo">Off-White</div>
+			<div class="navbar">
+				<div class="site-info">tees</div>
+				<div class="site-menu">
+					<div class="menu-item">projects</div>
+					<div class="menu-item">about</div>
+					<div class="menu-item">contact</div>
+				</div>
+			</div>
+			<div class="header">
+				<div class="header-left">
+					elevated<br /><span>reality</span>
+					<div class="link"><a href="#">view whole collection</a></div>
+				</div>
+				<div class="header-right">/all projects</div>
+			</div>
+			<div class="container">
+				<div class="container-items">
+					<div class="container-img-wrap">
+						<div class="container-img"></div>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-one.webp">
+							<h3>1</h3>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-two.webp">
+							<h3>2</h3>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-three.webp">
+							<h3>3</h3>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-four.webp">
+							<h3>4</h3>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-five.webp">
+							<h3>5</h3>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-six.jpg">
+							<h3>6</h3>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-seven.webp">
+							<h3>7</h3>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-eight.webp">
+							<h3>8</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		const allcontainer = gsap.utils.toArray(".container-item");
+		const venueImageWrap = document.querySelector(".container-img-wrap");
+		const venueImage = document.querySelector(".container-img");
 
-            </button>
+		function initcontainer() {
+			allcontainer.forEach((link) => {
+				link.addEventListener("mouseenter", venueHover);
+				link.addEventListener("mouseleave", venueHover);
+				link.addEventListener("mousemove", moveVenueImage);
+			});
+		}
 
-            <ul class="menu-left">
-                <li><a href="#">
-                    Work
-                </a></li>
-                <li><a href="#">
-                    Service
-                </a></li>
-                <li><a href="#">
-                    Pricing
-                </a></li>
-                <li><a href="#">
-                    Contacts
-                </a></li>
-            </ul>
-            <ul class="menu-right">
-                <li class="menu-cta"><a href="#">
-                    Get started
-                </a></li>
-            </ul>
-    </header>
+		function moveVenueImage(e) {
+			let xpos = e.clientX;
+			let ypos = e.clientY;
+			const tl = gsap.timeline();
+			tl.to(venueImageWrap, {
+				x: xpos,
+				y: ypos,
+			});
+		}
 
-<section id="intro"><br>
-    <div class="top-right-gradient"></div>
-    <div class="wrapper">
-        <div class="intro-left">
-            <h1>Solution To Turn Your Offline Business To An E-Commerce</h1>
-            <p>We help you turn your offlines
-                business into a stunning E-Commerce.
-                We provide analytics, real time 
-                sales report and marketing strategies</p>
-            <a href="#" class="intro-cta">Try it for free</a>
-        </div>
-        <div class="intro-right">
-            <img src="./src/undraw_visual_data_b1wx.png" draggable="false" style="-moz-user-select: none;" alt="">
-        </div>
-    </div>
-    <div class="button-left-gradient"></div>
-</section>
+		function venueHover(e) {
+			if (e.type === "mouseenter") {
+				const targetImage = e.target.dataset.img;
 
-<!--Sec5ion2-->
-<section id="about">
-    <div class="wrapper">
-        <div class="about-left">
-            <img src="./src/gianbello.svg" draggable="false" style="-moz-user-select: none;" alt="img">
-        </div>
-        <div class="about-right">
-            <h1>How we help you 
-                Manage & grow your 
-                business</h1> <p>Control data analytics anywhere, 
-                    anytime. Take advantage of rich 
-                    domain content, pre-built industry
-                    metrics stunning visualizers and data
-                    adaptors for cloud/business
-                    application as well as big data sources</p>
-                    <a href="#" class="cta">Learn more</a>
-        </div>
-    </div>
-  
-    <div class="top-right-gradient"></div>
+				const tl = gsap.timeline();
+				tl.set(venueImage, {
+					backgroundImage: `url(${targetImage})`,
+				}).to(venueImageWrap, {
+					duration: 0.5,
+					autoAlpha: 1,
+				});
+			} else if (e.type === "mouseleave") {
+				const tl = gsap.timeline();
+				tl.to(venueImageWrap, {
+					duration: 0.5,
+					autoAlpha: 0,
+				});
+			}
+		}
 
-</section><br><br>
+		function init() {
+			initcontainer();
+		}
 
-<!--endpage-->
+		window.addEventListener("load", function () {
+			init();
+		});
 
-<div class="page-banner">
-    <h1>E-Commerce made easy</h1>
-    <h3>Take your business to the next level</h3>
-    <a href="#">Get started</a>
-</div>
+		tl = new TimelineMax();
 
-<!--footer-->
+		tl.from(".navbar > div", 1.6, {
+			opacity: 0,
+			y: 60,
+			ease: Expo.easeInOut,
+			delay: 0.6,
+		});
 
-<footer>
-    <div class="wrapper">
-        <div class="footer-left">
-            <a href="/"><img src="./src/logo.png" draggable="false" style="-moz-user-select: none;" alt=""></a>
-            <p class="footer-links">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Prices</a>
-                <a href="#">Contacts</a>
-            </p>
-            
-        </div>
-        <div class="footer-center">
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
-                <p><span></span>Reggio Emilia</span></p>
-            </div>
-            <div>
-                <i class="fas fa-envelope"></i>
-                <p><span></span>alexfoderaro2003@gmail.com</span></p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-connect">
-                <span>Connect with us</span>
-                <div class="footer-icons">
-                    <a href="https://www.instagram.com/youngfoe13" class="fab fa-instagram"></a>
-                    <a href="#" class="fab fa-facebook"></a>
-                    <a href="#" class="fab fa-linkedin" ></a>
-                </div>
-            </p><br><br><br>
-            <p class="footer-company-name">Shopfunder &copy 2020 -  Made by Alex Foderaro</p>
-        </div>
-    </div>
-</footer>
-<script>
-    function showMenu(event){
-        event.preventDefault();
-        let element = document.getElementById('header');
-        if (element.classList.contains('active')){
-            element.className = "";
-        }else {
-            element.className = "active";
-        }
-    }
-</script>
-</body>
+		tl.from(
+			".site-logo",
+			1.6,
+			{
+				opacity: 0,
+				y: 40,
+				ease: Expo.easeInOut,
+			},
+			"-=1.6"
+		);
+
+		tl.staggerFrom(
+			".site-menu > div",
+			1,
+			{
+				opacity: 0,
+				y: 60,
+				ease: Power2.easeOut,
+			},
+			0.2
+		);
+
+		tl.staggerFrom(
+			".header > div",
+			1,
+			{
+				opacity: 0,
+				y: 60,
+				ease: Power2.easeOut,
+				delay: -1.4,
+			},
+			0.2
+		);
+	</script>
 </html>
